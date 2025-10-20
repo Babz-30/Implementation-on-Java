@@ -1,0 +1,81 @@
+mvn compile exec:java -Dexec.mainClass="org.example.Main" -Dexec.arguments="multi"
+
+https://www.youtube.com/watch?v=gchR3DpY-8Q&t=3s&ab_channel=WittCode
+
+
+mvn exec:java -Dexec.mainClass="Main"
+
+
+
+Variable name: JAVA_HOME
+Variable value: C:\Program Files\Java\jdk1.8.0_xxx
+
+Path 
+%JAVA_HOME%\bin
+
+java -version
+javac -version
+
+
+
+Variable name: MAVEN_HOME
+Variable value: C:\Program Files\Apache\Maven
+
+Path 
+%MAVEN_HOME%\bin
+
+mvn -version
+
+
+
+
+
+mvn clean compile
+mvn clean install
+
+
+
+mvn exec:java -Dexec.mainClass="Main"
+
+mvn exec:java -Dexec.mainClass="Main" -Dexec.arguments="multi"
+
+
+javac Player.java Main.java
+
+java PlayerProcess Player1 5000 5001
+java PlayerProcess Player2 5001 5000
+
+
+
+mvn exec:java -Dexec.mainClass="org.example.Main"
+
+java -cp target/player-communication-1.0-SNAPSHOT.jar com.example.PlayerServer
+
+
+java -cp target/player-communication-1.0-SNAPSHOT.jar com.example.PlayerClient
+
+mvn exec:java -Dexec.mainClass="com.example.Main" -Dexec.args="separate"
+
+
+start.sh
+
+#!/bin/bash
+
+# Check for argument to choose mode
+if [ "$1" == "same" ]; then
+    echo "Starting players in the same process..."
+    mvn clean install
+    java -cp target/player-communication-1.0-SNAPSHOT.jar com.example.Main same
+elif [ "$1" == "separate" ]; then
+    echo "Starting players in separate processes..."
+    mvn clean install
+    java -cp target/player-communication-1.0-SNAPSHOT.jar com.example.Main separate
+else
+    echo "Invalid mode. Use 'same' or 'separate'."
+fi
+
+
+
+./start.sh same  # or 
+./start.sh separate
+
