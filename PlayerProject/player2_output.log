@@ -1,0 +1,24 @@
+Player2 is available!
+Waiting for Player1 connection...
+Player2 connected to Player1!
+Player2 received: Hello 
+Player2 sent: Hello  1
+Player2 received: Hello  1 1
+Player2 sent: Hello  1 1 2
+Player2 received: Hello  1 1 2 2
+Player2 sent: Hello  1 1 2 2 3
+Player2 received: Hello  1 1 2 2 3 3
+Player2 sent: Hello  1 1 2 2 3 3 4
+Player2 received: Hello  1 1 2 2 3 3 4 4
+Player2 sent: Hello  1 1 2 2 3 3 4 4 5
+Player2 received: Hello  1 1 2 2 3 3 4 4 5 5
+Player2 sent: Hello  1 1 2 2 3 3 4 4 5 5 6
+Player2 received: Hello  1 1 2 2 3 3 4 4 5 5 6 6
+Player2 sent: Hello  1 1 2 2 3 3 4 4 5 5 6 6 7
+Player2 received: Hello  1 1 2 2 3 3 4 4 5 5 6 6 7 7
+Player2 sent: Hello  1 1 2 2 3 3 4 4 5 5 6 6 7 7 8
+Player2 received: Hello  1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8
+Player2 sent: Hello  1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9
+Player2 received: Hello  1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9
+Player2 sent: Hello  1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10
+Player2 has reached the message limit.
